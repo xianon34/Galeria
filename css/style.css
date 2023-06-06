@@ -1,0 +1,286 @@
+/* style.css */
+
+header {
+  background-color: rgb(19, 19, 19);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+body {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+
+  text-align: center;
+}
+
+body.dark-mode {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #999;
+}
+
+input:checked+.slider:before {
+  transform: translateX(16px);
+}
+
+
+.dark-mode {
+  /* Estilos para o modo escuro */
+  background-color: #222222;
+  color: #ffffff;
+}
+
+#bannerContainer {
+  text-align: center;
+  /* Centralizar o conteúdo horizontalmente */
+  margin-top: 20px;
+}
+
+#bannerContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff9600;
+}
+
+form#meuForm {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+form#meuForm label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+form#meuForm input,
+form#meuForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form#meuForm button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form#meuForm button[type="submit"]:hover {
+  background-color: #e67e00;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.assinatura {
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+
+.card {
+  display: block;
+  /* Alterado para display: block */
+  width: 30%;
+  /* Definindo um tamanho padrão para cada card */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Estilo para os cards no modo escuro */
+body.dark-mode .card {
+  color: #191919;
+  /* Altere para a cor desejada para o texto no modo escuro */
+}
+
+.card-info {
+  text-align: center;
+  /* Adicionado para centralizar o texto */
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: inline-block;
+    /* Alterado para display: inline-block */
+    width: 30%;
+    /* Definindo um tamanho padrão para cada card */
+    margin-right: 2%;
+    /* Adicionando um espaçamento entre os cards */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+  }
+
+  .card:nth-child(3n) {
+    margin-right: 0;
+    /* Removendo o espaçamento à direita para o último card de cada linha */
+  }
+}
+
+
+footer {
+  background-color: rgb(19, 19, 19);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  margin-right: 20px;
+}
+
+.footer-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-links li,
+.footer-social li {
+  margin-right: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Estilos para o dark mode */
+
+body.dark-mode footer {
+  background-color: rgb(19, 19, 19);
+  color: #ffffff;
+}
+
+body.dark-mode .footer-links a,
+body.dark-mode .footer-social a {
+  color: #ffffff;
+}
+
+body.dark-mode .footer-bottom p {
+  color: #ffffff;
+}

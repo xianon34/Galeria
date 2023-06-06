@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Galeria</title>
+</head>
+<header>
+  <div class="logo">
+    <img src="./img/1.jpg" alt="Logo">
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider"></span>
+      <span class="icon moon"></span>
+    </label>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Categorias</a></li>
+      <li><a href="#">Autores</a></li>
+      <li><a href="#">Sobre Nós</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <div>
+<H1>Destaques</H1>
+<img src="./img/der.jpg" alt="destaque">
+</div>
+  <div>
+    <H1>Galeria adicione sua arte abaixo</H1>
+
+
+  </div>
+  <form id="meuForm">
+    <div id="tituloWrapper">
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" minlength="4">
+      <span id="tituloError" class="error-message"></span>
+    </div>
+
+    <div id="descricaoWrapper">
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" minlength="4"></textarea>
+      <span id="descricaoError" class="error-message"></span>
+    </div>
+
+    <div id="urlImagemWrapper">
+      <label for="urlImagem">URL da imagem:</label>
+      <input type="url" id="urlImagem" name="urlImagem">
+      <span id="urlImagemError" class="error-message"></span>
+    </div>
+
+    <div id="assinaturaWrapper">
+      <label for="assinatura">Assinatura:</label>
+      <input type="text" id="assinatura" name="assinatura">
+      <span id="assinaturaError" class="error-message"></span>
+    </div>
+
+    <button type="submit" id="submitBtn" disabled>Enviar</button>
+  </form>
+
+  <div id="cardsContainer"></div>
+
+  <script src="./app.js"></script>
+</body>
+<footer>
+  <footer>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./img/1.jpg" alt="Logo">
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Destaque</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="footer-bottom">
+        <p>© Criado por Nathan Soares da Silva.</p>
+      </div>
+    </footer>
+    
+  </footer>
+  </div>
+</footer>
+
+</html>
